@@ -1,0 +1,37 @@
+<html>
+    <head>
+    </head>
+        <body>
+            <script type="text/javascript">
+                
+var today = new Date();
+var dd = today.getDate();
+
+var mm = today.getMonth()+1; 
+var yyyy = today.getFullYear();
+if(dd<10) 
+{
+    dd='0'+dd;
+} 
+
+if(mm<10) 
+{
+    mm='0'+mm;
+} 
+today = mm+'-'+dd+'-'+yyyy;
+document.write("1st format mm-dd-yyyy"+today);
+document.write("\n");
+today = mm+'/'+dd+'/'+yyyy;
+document.write("2nd format mm/dd/yyyy"+today);
+document.write("\n");
+today = dd+'-'+mm+'-'+yyyy;
+document.write("3rd format dd-mm-yyyy"+today);
+document.write("\n");
+today = dd+'/'+mm+'/'+yyyy;
+document.write("4th format dd/mm/yyyy"+today);
+documnet.write("\n");
+            </script>
+            
+        </body>
+    
+</html>
